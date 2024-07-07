@@ -2,7 +2,7 @@ import express from 'express'
 import logger from './loggerMiddleware.js'
 import cors from 'cors'
 
-const PORT = 3000
+const PORT = process.env.PORT || 3000
 
 const app = express()
 app.use(express.json())
